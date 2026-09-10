@@ -1,9 +1,9 @@
-# VectorDB — Build a Vector Database from Scratch in C++
+# Build your own AI with Madan
 
-A fully working **Vector Database** built from scratch in C++ with a web UI.  
-Implements **HNSW**, **KD-Tree**, and **Brute Force** search algorithms side-by-side, plus a **RAG pipeline** powered by a local LLM via Ollama.
+A hands-on **AI project** built from scratch in C++ with a web UI.  
+This project demonstrates **vector search**, **semantic retrieval**, and a **RAG pipeline** powered by a local LLM through Ollama.
 
-> Built as an educational project to show how production vector databases like Pinecone, Weaviate, and Chroma actually work under the hood.
+> Built as an educational project to explore how modern AI systems combine embeddings, vector databases, and local language models in practice.
 
 ---
 
@@ -131,11 +131,11 @@ You should see both models listed.
 Open **PowerShell** and run:
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/VectorDB.git
-cd VectorDB
+git clone <your-repository-url>
+cd Build-your-own-AI
 ```
 
-*(Replace `YOUR_USERNAME` with the actual GitHub username)*
+If you are working from this folder locally, just open the project directory and continue with the build steps below.
 
 ---
 
@@ -270,11 +270,12 @@ curl -X POST http://localhost:8080/doc/ask `
 ## Project Structure
 
 ```
-VectorDB/
+Build-your-own-AI/
 ├── main.cpp        ← C++ backend (HNSW, KD-Tree, BruteForce, REST API, RAG)
 ├── httplib.h       ← Single-header HTTP server library (cpp-httplib)
 ├── index.html      ← Frontend (PCA scatter plot, chat UI, benchmark)
-└── README.md       ← This file
+├── README.md       ← Project guide and setup instructions
+└── .gitignore      ← Git ignore rules
 ```
 
 ### Architecture (main.cpp)
@@ -341,6 +342,3 @@ Recompile and restart.
 
 ---
 
-## License
-
-MIT — use this however you want.
